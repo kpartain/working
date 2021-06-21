@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Portfolio</title>
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <style>
+            #headshot {
+                width: 250px;
+            }
+            .icon {
+                width: 25px;
+            }
+            .padded-right a {
+                padding-right: 10px;
+            }
+            #technologies {
+                width: 500px;
+                height: 200px;
+            }
+            textarea {
+                width: 450px;
+            }
+            #placeholderGIF {
+                width: 500px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- HEADER, ICON -->
+        <h1>Karalynn Partain</h1>
+        <img
+            src="https://bit.ly/3zIO9MW"
+            id="headshot"
+            alt="Photo of Karalynn Partain"
+        />
+        <!-- LINKS -->
+        <p class="padded-right">
+            <a href="https://github.com/kpartain">
+                <img
+                    class="icon"
+                    src="ICONS/github.svg"
+                    alt="icon for github"
+                />
+                my github
+            </a>
+            <a href="https://www.linkedin.com/in/karalynnpartain/">
+                <img
+                    class="icon"
+                    src="ICONS/linkedin.svg"
+                    alt="icon for linkedin"
+                />
+                my github
+            </a>
+
+            <a href="mailto:karalynnleann@gmail.com">
+                <img class="icon" src="ICONS/email.svg" alt="icon for email" />
+                my github
+            </a>
+        </p>
+        <!-- TECHNOLOGIES -->
+        <h2>Technologies</h2>
+        <iframe
+            id="technologies"
+            src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTCeM4vEJz3ON8VjoWINnGPpOC6HeO4j7DB4q2kCWwONtn5hDdQzlBB4EYhx-8Sy48GiQbPNW34iEf6/pubhtml?widget=true&amp;headers=false"
+        ></iframe>
+        <!-- SOCIAL -->
+        <h2>Social Snakes</h2>
+        <img
+            id="placeholderGIF"
+            src="https://karaspersonalprojectbucket.s3.us-east-2.amazonaws.com/puppy.gif"
+            alt="a gif of a puppy for now"
+        />
+        <p>
+            Social Media App made in Python -
+            <a href="www.google.com">a link to google as a filler</a>
+        </p>
+        <!-- CONTACT -->
+        <h2>Contact Me</h2>
+        <form
+            action="https://formsubmit.co/karalynnleann@gmail.com"
+            method="POST"
+        >
+            <span>
+                Name:
+                <input
+                    type="text"
+                    name="name"
+                    placeholder="Your name..."
+                    required
+                />
+                Email:
+                <input
+                    type="email"
+                    name="email"
+                    placeholder="Your e-mail"
+                    required
+                />
+            </span>
+
+            <p>Message:</p>
+            <textarea
+                maxlength="1000"
+                placeholder="Your message..."
+                name="message"
+                rows="10"
+                required
+            ></textarea>
+            <input type="hidden" name="_template" value="table" />
+            <input type="text" name="_honey" style="display: none" />
+            <input type="hidden" name="_captcha" value="false" />
+            <!-- update # later to custom html file for success message -->
+            <input type="hidden" name="_next" value="#" />
+            <p>
+                <button type="submit">Send Message</button>
+            </p>
+        </form>
+    </body>
+</html>
