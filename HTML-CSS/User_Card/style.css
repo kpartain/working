@@ -2,31 +2,45 @@
     padding: 0;
     margin: 0;
 }
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
 
-#card {
+.card {
     width: 50rem;
     height: 25rem;
-    border: 2px solid gray;
     margin: auto;
+    margin-top: 2rem;
 }
 
 #blue {
     background-color: #17a2b8;
-    height: 5rem;
+    height: 8rem;
+}
+
+#white {
+    height: 17rem;
+    border: .25rem solid lightgray;
+    border-top: none
 }
 
 #contents {
     margin: 2%;
+    position: fixed;
+    top: 4rem;
 }
 .titles li {
     list-style: none;
     display: inline;
 }
 .icon {
-    width: 25px;
+    width: 16px;
 }
-#headshot {
-    height: 150px;
-    border-radius: 50%;
-    border: 2px solid black;
+#circle img{
+    height: 175px;
+    width: 175px;
+}
+p {
+    margin: .5rem;
 }
