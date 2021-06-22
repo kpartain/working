@@ -1,0 +1,32 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#card {
+    width: 50rem;
+    height: 25rem;
+    border: 2px solid gray;
+    margin: auto;
+}
+
+#blue {
+    background-color: #17a2b8;
+    height: 5rem;
+}
+
+#contents {
+    margin: 2%;
+}
+.titles li {
+    list-style: none;
+    display: inline;
+}
+.icon {
+    width: 25px;
+}
+#headshot {
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid black;
+}
