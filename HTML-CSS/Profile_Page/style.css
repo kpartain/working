@@ -4,7 +4,10 @@
     padding: 0;
 }
 body {
-    background-color: rgb(185, 61, 61);
+    background-color: white;
+}
+.icon {
+    height: 30px;
 }
 /* NAVBAR */
 #navbar {
@@ -40,7 +43,7 @@ body {
     font-weight: bolder;
 }
 .button {
-    background-color: #17A2B8;
+    background-color: #17a2b8;
 }
 /* content divs */
 #content li {
@@ -52,19 +55,38 @@ body {
 #left {
     width: 50rem;
     height: 100rem;
-    background-color: blue;
     margin-left: 10rem;
     margin-right: 2.5rem;
     padding-top: 3rem;
 }
 #left div {
     margin: auto;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
 }
 #profile {
     width: 50rem;
     height: 35rem;
     background-color: green;
+}
+.bottom p {
+    text-align: left;
+    padding-left: 100px;
+}
+.top {
+    height: 10rem;
+    background: #17A2B8;
+}
+#test {
+    margin-top: -10rem;
+    margin-left: 5rem;
+    width: 10rem;
+}
+#blue {
+    height: 10rem;
+    background-color: #17a2b8;
+}
+#headshot img {
+    margin: -10rem 0;
 }
 #education {
     width: 50rem;
@@ -75,14 +97,12 @@ body {
 #right {
     width: 42rem;
     height: 100rem;
-    background-color: rgb(82, 26, 0);
     margin-left: 2.5rem;
     margin-right: 10rem;
-    padding-top: 3rem;
 }
 #right div {
     margin: auto;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
 }
 #alerts {
     width: 42rem;
