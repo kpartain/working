@@ -6,6 +6,12 @@
         <title></title>
         <meta name="description" content="" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+            rel="stylesheet"
+        />
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
@@ -29,30 +35,53 @@
                 <li>
                     <div id="left">
                         <!-- profile -->
-                        <div id="profile">
+                        <div id="profile" class="spaced">
                             <div class="top"></div>
                             <div class="bottom">
                                 <img
-                                    id="test"
+                                    id="headshot"
                                     src="../../Resources/ICONS/user-circle.png"
                                     alt="generic user placeholder"
                                 />
-                                <p>Jane Doe</p>
+                                <p class="impact">Jane Doe</p>
                                 <p>
                                     <span
                                         ><img
                                             src="../../Resources/ICONS/map-marker.png"
                                             alt="icon of a map marker"
                                             class="icon" /></span
-                                    >Seattle, WA
+                                    > Seattle, WA
                                 </p>
                                 <p>Developer | Engineer | Problem Solver</p>
                                 <p>Master of shadows and the Internet!</p>
-                                <p><span><img src="../../Resources/ICONS/gear.png" alt="generic icon of a gear" class="icon" /></span> <a href="#">edit profile</a></p>
+                                <p>
+                                    <span
+                                        ><img
+                                            src="../../Resources/ICONS/gear.png"
+                                            alt="generic icon of a gear"
+                                            class="icon"
+                                    /></span>
+                                    <a href="#">edit profile</a>
+                                </p>
                             </div>
                         </div>
                         <!-- education -->
-                        <div id="education">b</div>
+                        <div id="education" class="spaced">
+                            <div class="top-gray"><h1>Education</h1></div>
+                            <div class="bottom-white">
+                                <h1>Coding Dojo - Full Stack Bootcamp</h1>
+                                <h2>June 2021 - Sept 2021</h2>
+                                <h3>Triple black belt in Python, MERN, and C#...</h3>
+                                <hr>
+                                <h1>Launch Academy - Full Stack Bootcamp</h1>
+                                <h2>Jan 2021 - May 2021</h2>
+                                <h3>JS, Java, Express, React, Postgres</h3>
+                                <hr>
+                                <h1>University of Florida</h1>
+                                <h2>A long long time ago in a swap far away</h2>
+                                <h3>Biology, coffee, library</h3>
+                            </div>
+                        </div>
                     </div>
                 </li>
 
@@ -60,9 +89,9 @@
                 <li>
                     <div id="right">
                         <!-- alerts -->
-                        <div id="alerts">c</div>
+                        <div id="alerts" class="spaced">c</div>
                         <!-- connections -->
-                        <div id="connections">d</div>
+                        <div id="connections" class="spaced">d</div>
                     </div>
                 </li>
             </ul>
