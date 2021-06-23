@@ -39,22 +39,26 @@ console.log("liftoff!");
 
 //T-Chart Example 2
 //Variable | Value
-// i       | 
-// c.log() | 
+// i       | 10 ; 9 ; 8 ; 7 ; 6 ; 5 ; 4 ; 3 ; 2 ; 1 ; 0
+// c.log() | 10 ; 9 ; 8 ; 7 ; 6 ; 5 ; 4 ; 3 ; ignition! ; 1
 
 // EXAMPLE THREE*************************************
 
 var countPositives = 0;
 var numbers = [3, 4, -2, 7, 16, -8, 0];
 
-// your code here!
-
+for (var i = 0; i < numbers.length; i++) {
+    if (numbers[i] > 0) {
+        countPositives++;
+    } else {
+        //do nothing
+    }
+}
 console.log("there are " + countPositives + " positive values");
 
 //T-Chart Example 3
 //Variable | Value
-//         |
-//         |
-//         |
-//         |
-// c.log() | 
+// countPositives| 0 1 2 3 4
+// numbers       | [3, 4, -2, 7, 16, -8, 0]
+// i             | 0 1 2 3 4 5 6 7
+// c.log() | "there are 4 positive values"
