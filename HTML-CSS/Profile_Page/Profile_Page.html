@@ -12,12 +12,12 @@
             href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
             rel="stylesheet"
         />
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="style2.css" />
     </head>
     <body>
-        <!-- navbar -->
-        <div id="navbar">
-            <ul class="navbar">
+        <!-- NAVBAR -->
+        <header id="navbar">
+            <ul class="navbar no-bullet inline">
                 <li>
                     <a href="#"><h2>Profile</h2></a>
                 </li>
@@ -30,26 +30,24 @@
                 <li>
                     <a href="#"><h2>Find Connections</h2></a>
                 </li>
-                <li style="float: right">
-                    <a class="button" href="#about"><h2>Sign Out</h2></a>
+                <li id="float">
+                    <button type="button" class="blue button">Sign Out</button>
                 </li>
             </ul>
-        </div>
-        <!-- content container w left and right being col-->
-        <div id="content">
-            <!-- content left and right -->
-            <!-- left -->
-            <div id="left">
-                <!-- profile -->
-                <div id="profile">
-                    <div class="top blue"></div>
-                    <div class="bottom">
+        </header>
+        <!-- CONTENT -->
+        <div id="main">
+            <!-- LEFT -->
+            <article class="space">
+                <div class="vertical">
+                    <div class="profile-top blue"></div>
+                    <div class="bottom padded-left-bottom">
                         <img
                             id="headshot"
                             src="../../Resources/ICONS/user-circle.png"
                             alt="generic user placeholder"
                         />
-                        <p class="impact">Jane Doe</p>
+                        <h1>Jane Doe</h1>
                         <p>
                             <span
                                 ><img
@@ -59,7 +57,7 @@
                             /></span>
                             Seattle, WA
                         </p>
-                        <p>Developer | Engineer | Problem Solver</p>
+                        <h2>Developer | Engineer | Problem Solver</h2>
                         <p>Master of shadows and the Internet!</p>
                         <p>
                             <span
@@ -73,49 +71,131 @@
                     </div>
                 </div>
                 <!-- education -->
-                <div id="education" >
-                    <div class="top-gray"><h1>Education</h1></div>
-                    <div class="bottom">
+                <div class="vertical">
+                    <div class="top gray padded-left-bottom">
+                        <h2>Education</h2>
+                    </div>
+                    <div class="bottom padded-left-bottom" id="education-content">
                         <h1>Coding Dojo - Full Stack Bootcamp</h1>
                         <h2>June 2021 - Sept 2021</h2>
                         <h3>Triple black belt in Python, MERN, and C#...</h3>
-                        <hr />
+                        <br>
                         <h1>Launch Academy - Full Stack Bootcamp</h1>
                         <h2>Jan 2021 - May 2021</h2>
                         <h3>JS, Java, Express, React, Postgres</h3>
-                        <hr />
+                        <br>
                         <h1>University of Florida</h1>
-                        <h2>A long long time ago in a swap far away</h2>
+                        <h2>A long, long time ago in a swamp far, far away</h2>
                         <h3>Biology, coffee, library</h3>
                     </div>
                 </div>
-            </div>
-            <!-- right -->
-            <div id="right">
+            </article>
+
+            <!-- RIGHT -->
+            <aside class="space">
                 <!-- alerts -->
-                <div id="alerts">
-                    <div class="top-gray"><h2>2 Connection Requests</h2></div>
+                <div class="vertical">
+                    <div class="top gray">
+                        <h2>
+                            <img
+                                class="action-icon"
+                                src="../../Resources/ICONS/notification_bell.png"
+                                alt="notification icon active"
+                            />
+                            Connection Requests
+                        </h2>
+                    </div>
                     <div class="bottom">
-                        <ul>
-                            <li><img src="../../Resources/ICONS/todd-s.jpg" alt="photo of user" class="round-photo"/> Todd E <img src="../../Resources/ICONS/accept-circle.png" class="action-icon" alt="accept request"/><img src="../../Resources/ICONS/close-circle.png" class="action-icon" alt="decline request"/></li>
-                            <li><img src="../../Resources/ICONS/phil-s.jpg" alt="photo of user" class="round-photo"/>pic Phil S + x</li>
+                        <ul class="no-bullet text-style users">
+                            <li>
+                                <img
+                                    src="../../Resources/ICONS/todd-s.jpg"
+                                    alt="photo of user"
+                                    class="round-photo"
+                                />
+                                <span>Todd E
+                                <img
+                                    src="../../Resources/ICONS/accept-circle.png"
+                                    class="action-icon float"
+                                    alt="accept request"
+                                /><img
+                                    src="../../Resources/ICONS/close-circle.png"
+                                    class="action-icon float"
+                                    alt="decline request"
+                                /></span>
+                            </li>
+                            <li>
+                                <img
+                                    src="../../Resources/ICONS/phil-s.jpg"
+                                    alt="photo of user"
+                                    class="round-photo"
+                                />
+                                <span>Phil S
+                                <img
+                                    src="../../Resources/ICONS/accept-circle.png"
+                                    class="action-icon float"
+                                    alt="accept request"
+                                /><img
+                                    src="../../Resources/ICONS/close-circle.png"
+                                    class="action-icon float"
+                                    alt="decline request"
+                                /></span>
+                            </li>
                         </ul>
                     </div>
                 </div>
                 <!-- connections -->
-                <div id="connections">
-                    <div class="top-gray"><h2>500+ Your Connections</h2></div>
+                <div class="vertical">
+                    <div class="top gray">
+                        <h2>
+                            <img
+                                class="action-icon"
+                                src="../../Resources/ICONS/notification_bell.png"
+                                alt="notification icon active"
+                            />500+ Your Connections
+                        </h2>
+                    </div>
                     <div class="bottom">
-                        <ul>
-                            <li><img src="../../Resources/ICONS/adrien-s.jpg" alt="photo of user" class="round-photo"/> Adrien D</li>
-                            <li><img src="../../Resources/ICONS/anne-s.jpg" alt="photo of user" class="round-photo"/> Anne J</li>
-                            <li><img src="../../Resources/ICONS/alayne-s.jpg" alt="photo of user" class="round-photo"/> Alayne T</li>
-                            <li><img src="../../Resources/ICONS/arry-s.jpg" alt="photo of user" class="round-photo"/> Arry Y</li>
+                        <ul class="no-bullet text-style users">
+                            <li>
+                                <img
+                                    src="../../Resources/ICONS/adrien-s.jpg"
+                                    alt="photo of user"
+                                    class="round-photo"
+                                />
+                                <span>Adrien D</span>
+                            </li>
+                            <li>
+                                <img
+                                    src="../../Resources/ICONS/anne-s.jpg"
+                                    alt="photo of user"
+                                    class="round-photo"
+                                />
+                                <span>Anne J</span>
+                            </li>
+                            <li>
+                                <img
+                                    src="../../Resources/ICONS/alayne-s.jpg"
+                                    alt="photo of user"
+                                    class="round-photo"
+                                />
+                                <span>Alayne T</span>
+                            </li>
+                            <li>
+                                <img
+                                    src="../../Resources/ICONS/arry-s.jpg"
+                                    alt="photo of user"
+                                    class="round-photo"
+                                />
+                                <span>Arry Y</span>
+                            </li>
                         </ul>
-                        <p><a href="#">View More</a></p>
+                        <p class="more"><a href="#"><h2>View More</h2></a></p>
                     </div>
                 </div>
-            </div>
+            </aside>
         </div>
+        <!-- FOOTER -->
+        <footer>Footer</footer>
     </body>
 </html>
