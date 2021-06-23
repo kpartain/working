@@ -54,6 +54,11 @@ for (var i = 0; i < numbers.length; i++) {
         //do nothing
     }
 }
+//alternate:
+
+for (var i = 0; i < numbers.length; i++) {
+    numbers[i] > 0 ? countPositives ++ : null
+}
 console.log("there are " + countPositives + " positive values");
 
 //T-Chart Example 3
