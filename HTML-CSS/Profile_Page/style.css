@@ -82,12 +82,12 @@ header {
 .action-icon {
     height: 4vh;
     margin-right: 2vw;
-    vertical-align: middle;
+    vertical-align: text-bottom;
 }
 .round-photo {
     border-radius: 50%;
     height: 8vh;
-    vertical-align: middle;
+    vertical-align: bottom;
 }
 
 /* COLOR COMPONENTS */
@@ -153,4 +153,5 @@ header {
 }
 .actions {
     float: right;
+    vertical-align: text-bottom;
 }
