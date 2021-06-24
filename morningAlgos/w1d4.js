@@ -16,8 +16,6 @@ console.log(x);
 //         |
 // c.log() | 5 ; 15
 
-
-
 //The Return of return
 var x = 5;
 
@@ -32,11 +30,9 @@ console.log(result);
 console.log(x);
 //T-Chart Example X
 //Variable | Value
-//  x      | 5 ; 
-//  result | -5 ; 
+//  x      | 5 ;
+//  result | -5 ;
 // c.log() | 5 ; -5 ; 5
-
-
 
 //Code Flow - Is the Array a Palindrome
 function isPal(arr) {
