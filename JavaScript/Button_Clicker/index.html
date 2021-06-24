@@ -1,8 +1,4 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
     <head>
         <meta charset="utf-8" />
@@ -10,6 +6,12 @@
         <title>Button Clicker</title>
         <meta name="description" content="" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+            rel="stylesheet"
+        />
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
@@ -46,28 +48,41 @@
                             <h1>ninja</h1>
                             <h2>noun</h2>
                             <h3>plural: ninjas</h3>
-                            <button type="button" onclick="increaseLikes(this)" class="yellow button">
+                            <button
+                                type="button"
+                                onclick="increaseLikes(this)"
+                                class="yellow button"
+                            >
                                 0 Likes
                             </button>
                         </div>
                         <div class="definition">
-                            <h2>A practitioner skilled in the Japanese art of
-                            ninjutsu</h2>
+                            <h2>
+                                A practitioner skilled in the <a href="#">Japanese</a> art of
+                                <a href="#">ninjutsu</a>
+                            </h2>
                         </div>
                     </div>
                     <!-- WORD TWO -->
                     <div class="singleWord border">
                         <div id="dojo" class="entry">
-                            <h1>dojo</h1> 
-                            <h2>noun</h2> 
+                            <h1>dojo</h1>
+                            <h2>noun</h2>
                             <h3>plural: dojos</h3>
-                            <button type="button" onclick="increaseLikes(this)" class="yellow button">
+                            <button
+                                type="button"
+                                onclick="increaseLikes(this)"
+                                class="yellow button"
+                            >
                                 0 Likes
                             </button>
                         </div>
                         <div class="definition">
-                            <h2>A school for training in various arts of
-                            self-defense such as judo or karate</h2>
+                            <h2>
+                                A school for training in various arts of
+                                self-defense such as <a href="#">judo</a> or
+                                <a href="#">karate</a>
+                            </h2>
                         </div>
                     </div>
                 </div>
@@ -75,7 +90,7 @@
                 <div class="column-left">
                     <div class="add-definition border">
                         <h1>Dojonary is defined by YOU</h1>
-                        <br>
+                        <br />
                         <button
                             onclick="addDefinition(this)"
                             id="addDefinition"
