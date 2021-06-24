@@ -1,0 +1,20 @@
+.card {
+    margin: auto;
+    width: 50%;
+    border: 1vh solid black;
+    padding: 2vh 2vw;
+    margin-top: 5vh;
+}
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.yellow {
+    background-color: #ffd966;
+}
+.button {
+    box-shadow: 0.25vh 0.25vh black;
+    font-size: 2vh;
+    padding: 0.5vh 1vw 0.5vh 1vw;
+}
