@@ -1,11 +1,6 @@
 function increaseLikes(element) {
     //change the count on the button and the prior element per assignment *button is extra
-    return [
-        (element.innerText = likeSplit(element.innerText)),
-        (document.querySelector("#likeCount").innerText = likeSplit(
-            document.querySelector("#likeCount").innerText
-        )),
-    ];
+    return [element.innerText = likeSplit(element.innerText), element.parentElement.childNodes[3].innerText = likeSplit(element.parentElement.childNodes[3].innerText) ];
 }
 
 //helper function to remove redundancy of incrementing inner text likes
