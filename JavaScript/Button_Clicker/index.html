@@ -5,58 +5,89 @@
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <title>Button Clicker</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="style.css" />
     </head>
     <body>
         <div class="main">
             <div class="navbar">
-                <h1>Dojonary</h1>
-                <input type="text" id="myInput" placeholder="Search for a word..">
-                <button type="button" onclick="loginLogout()" id="loginLogout">login</button>
+                <ul>
+                    <li><h1>Dojonary</h1></li>
+                    <li>
+                        <input
+                            type="text"
+                            id="myInput"
+                            placeholder="Search for a word.."
+                            class="border"
+                        />
+                    </li>
+                    <li>
+                        <button
+                            type="button"
+                            onclick="loginLogout()"
+                            id="loginLogout"
+                            class="blue button"
+                        >
+                            login
+                        </button>
+                    </li>
+                </ul>
             </div>
-            <div class="content">
+            <div class="flex-parent">
                 <!-- LEFT COLUMN -->
-                <div class="left">
-                    <ul id="dictionaryEntries">
+                <div class="column-right">
                     <!-- WORD ONE -->
-                    <li class="singleEntry" >
-                        <div id="ninja">
-                            ninja
-                            noun
-                            plural: ninjas
-                            <button type="button" onclick="increaseLikes(this)">0 Likes</button>
+                    <div class="singleWord border">
+                        <div id="ninja" class="entry">
+                            <h1>ninja</h1>
+                            <h2>noun</h2>
+                            <h3>plural: ninjas</h3>
+                            <button type="button" onclick="increaseLikes(this)" class="yellow button">
+                                0 Likes
+                            </button>
                         </div>
-                        <div class="definition">A practitioner skilled in the Japanese art of ninjutsu</div>
-                    </li>
-                    <!-- WORD TWO -->  
-                    <li class="singleEntry" >
-                        <div id="dojo">
-                            dojo
-                            noun
-                            plural: dojos
-                            <button type="button" onclick="increaseLikes(this)">0 Likes</button>
+                        <div class="definition">
+                            <h2>A practitioner skilled in the Japanese art of
+                            ninjutsu</h2>
                         </div>
-                        <div class="definition">A school for training in various arts of self-defense such as judo or karate</div>
-                    </li>
-                    </ul>
-                    
-                    
+                    </div>
+                    <!-- WORD TWO -->
+                    <div class="singleWord border">
+                        <div id="dojo" class="entry">
+                            <h1>dojo</h1> 
+                            <h2>noun</h2> 
+                            <h3>plural: dojos</h3>
+                            <button type="button" onclick="increaseLikes(this)" class="yellow button">
+                                0 Likes
+                            </button>
+                        </div>
+                        <div class="definition">
+                            <h2>A school for training in various arts of
+                            self-defense such as judo or karate</h2>
+                        </div>
+                    </div>
                 </div>
                 <!-- RIGHT COLUMN -->
-                <div class="right">
-                    <div class="add-definition">
-                        Dojonary is defined by YOU
-                        <button onclick=>Add Definition</button>
+                <div class="column-left">
+                    <div class="add-definition border">
+                        <h1>Dojonary is defined by YOU</h1>
+                        <br>
+                        <button
+                            onclick="addDefinition(this)"
+                            id="addDefinition"
+                            class="green button"
+                        >
+                            Add Definition
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
-        
+
         <script src="Button_Clicker.js" async defer></script>
     </body>
 </html>
