@@ -3,36 +3,123 @@
     <head>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title></title>
+        <title>Network: Your Feed</title>
         <meta name="description" content="" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+            rel="stylesheet"
+        />
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-        <div class="card">
-            <div class="top">
-                <h1>Some User</h1>
-                <h2 id="likeCount">0 Likes</h2>
-                <button
-                    type="button"
-                    onclick="increaseLikes(this)"
-                    class="yellow button"
-                >
-                    0 Likes
-                </button>
-            </div>
+        <!-- MAIN CONTAINER -->
+        <div class="main">
+            <!-- NAVBAR & YOUR FEED -->
+            <header><h1 class="font-3vh">Network</h1></header>
+            <h1 class="centered font-3vh">Your Feed</h1>
+            <div class="row">
+                <!-- TWO COLUMNS -->
+                <div class="column1">
+                    <!-- LEFT-PROFILE  -->
+                    <div class="standard-border-spacing display-block centered margin-2vh">
+                        <img
+                            class="round-photo"
+                            src="../../Resources/ICONS/arry-s.jpg"
+                            alt="a photo of woman with laser beam eyes"
+                        />
+                        <a href="#">Add an avatar</a>
+                        <h2>James Doe</h2>
+                    </div>
+                </div>
 
-            <!-- shameless plug for hipsum.co -->
-            <p>
-                I'm baby chambray williamsburg fashion axe green juice authentic
-                salvia. Cronut succulents cold-pressed put a bird on it lo-fi
-                salvia. Tilde mlkshk hammock freegan schlitz. Synth pork belly
-                street art before they sold out franzen jianbing. You probably
-                haven't heard of them gluten-free dreamcatcher gochujang squid
-                tumblr letterpress organic, DIY master cleanse shoreditch
-                kombucha.
-            </p>
+                <!-- RIGHT-FEED -->
+                <div class="column2">
+                    <!-- SINGLE FEED ENTRY -->
+                    <div class="standard-border-spacing margin-2vh">
+                        <div class="top">
+                            <h1>Soth Rlacha</h1>
+                            <h2 id="likeCount">0 Like(s)</h2>
+                            <button
+                                type="button"
+                                onclick="increaseLikes(this)"
+                                class="yellow button"
+                            >
+                                0 Like(s)
+                            </button>
+                        </div>
+                        <!-- shameless plug for hipsum.co -->
+                        <p>
+                            I'm baby chambray williamsburg fashion axe green
+                            juice authentic salvia. Cronut succulents
+                            cold-pressed put a bird on it lo-fi salvia. Tilde
+                            mlkshk hammock freegan schlitz. Synth pork belly
+                            street art before they sold out franzen jianbing.
+                            You probably haven't heard of them gluten-free
+                            dreamcatcher gochujang squid tumblr letterpress
+                            organic, DIY master cleanse shoreditch kombucha.
+                        </p>
+                    </div>
+                    <!-- SINGLE FEED ENTRY -->
+                    <div class="standard-border-spacing margin-2vh">
+                        <div class="top">
+                            <h1>Voorm Xothee</h1>
+                            <h2 id="likeCount">0 Like(s)</h2>
+                            <button
+                                type="button"
+                                onclick="increaseLikes(this)"
+                                class="yellow button"
+                            >
+                                0 Like(s)
+                            </button>
+                        </div>
+                        <!-- shameless plug for hipsum.co -->
+                        <p>
+                            Gochujang food truck gentrify hexagon. Woke
+                            vaporware sriracha waistcoat lomo master cleanse.
+                            Drinking vinegar pop-up echo park, slow-carb fanny
+                            pack cornhole shaman kinfolk master cleanse
+                            chillwave heirloom man bun sustainable palo santo.
+                            Meh affogato coloring book occupy twee adaptogen,
+                            locavore bushwick leggings ramps. Brooklyn fam etsy
+                            crucifix. Hoodie af quinoa edison bulb bushwick
+                            flannel fanny pack bicycle rights four loko
+                            letterpress slow-carb marfa church-key cornhole.
+                        </p>
+                    </div>
+                    <!-- SINGLE FEED ENTRY -->
+                    <div class="standard-border-spacing margin-2vh">
+                        <div class="top">
+                            <h1>Nthlorrhudde</h1>
+                            <h2 id="likeCount">0 Like(s)</h2>
+                            <button
+                                type="button"
+                                onclick="increaseLikes(this)"
+                                class="yellow button"
+                            >
+                                0 Like(s)
+                            </button>
+                        </div>
+                        <!-- shameless plug for hipsum.co -->
+                        <p>
+                            Whatever paleo cliche roof party. Four loko selvage
+                            post-ironic vaporware glossier kickstarter DIY.
+                            Tacos fingerstache four loko, pug viral williamsburg
+                            plaid helvetica tattooed PBR&B hell of. Iceland
+                            readymade wayfarers echo park tumblr YOLO photo
+                            booth single-origin coffee snackwave pitchfork.
+                            Freegan shoreditch XOXO post-ironic gentrify. XOXO
+                            food truck four loko, DIY poutine bushwick fashion
+                            axe everyday carry kickstarter. Ramps vegan banjo,
+                            retro distillery small batch hot chicken actually.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
+
         <script src="Liking_Likes.js" async defer></script>
     </body>
 </html>

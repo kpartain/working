@@ -1,6 +1,42 @@
-.card {
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+header {
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding: 2vh;
+    margin-bottom: 1vh;
+}
+.font-3vh{
+    font-size: 4vh;
+}
+.margin-2vh > *{
+    margin: 2vh 0 2vh 0;
+}
+.centered {
+    text-align: center;
+}
+.main {
+    padding: 0 10vw 0 10vw;
+}
+.row {
+    display: flex;
+    gap: 5vh;
+}
+.display-block a, h2 {
+    display: block;
+}
+.column1 {
+    flex: 1;
+}
+.column2 {
+    flex: 3;
+}
+.standard-border-spacing {
     margin: auto;
-    width: 50%;
     border: 1vh solid black;
     padding: 2vh 2vw;
     margin-top: 5vh;
@@ -17,4 +53,7 @@
     box-shadow: 0.25vh 0.25vh black;
     font-size: 2vh;
     padding: 0.5vh 1vw 0.5vh 1vw;
+}
+.round-photo{
+    border-radius: 50%;
 }

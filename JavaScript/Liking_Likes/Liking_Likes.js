@@ -12,6 +12,6 @@ function increaseLikes(element) {
 function likeSplit(textFromElement) {
     var split = textFromElement.split(" ");
     var likeCount = parseInt(split[0]) + 1;
-    var returnTextForElement = likeCount + " Likes";
+    var returnTextForElement = likeCount + " Like(s)";
     return returnTextForElement;
 }
