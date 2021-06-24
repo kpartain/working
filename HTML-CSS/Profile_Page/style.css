@@ -34,7 +34,7 @@ header {
     top: 0;
 }
 footer {
-    background-color: black;
+    text-align: center;
 }
 footer,
 article,
@@ -42,37 +42,37 @@ nav,
 aside {
     padding: 1em;
 }
-/* ARTICLE AND ASIDE*/
-.space {
-    margin-top: 5vh;
-    background-color: white;
+ul, li {
+    list-style: none;
 }
+hr {
+    margin: 1vh 0vw
+}
+
 /* NAVBAR */
-#navbar {
+header {
     width: 100%;
     background-color: black;
     color: white;
     position: sticky;
     top: 0;
-    padding: 2vh 2vw 0vh 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
-.navbar {
+.navbar > * {
     background-color: rgb(0, 0, 0);
-}
-.navbar li {
-    float: left;
-    margin-right: 10vh;
-}
-.navbar li a {
     color: white;
-    text-align: center;
-    text-decoration: none;
 }
-.navbar > h1:hover,
-h2:hover {
+.navbar a:link, a:visited, a:active, a:hover {
+    text-decoration: none;
+    color: white;
+}
+.navbar *:hover {
     color: rgb(43, 226, 171);
 }
-/* REUSABLE COMPONENTS */
+
+/* REUSABLE IMG ICON COMPONENTS */
 .round-photo {
     border-radius: 50%;
 }
@@ -84,74 +84,73 @@ h2:hover {
     margin-right: 2vw;
     vertical-align: middle;
 }
-.blue {
-    background-color: #17a2b8;
-    color: white;
-}
-#float {
-    float: right;
-}
-.float {
-    float: right;
-}
-.bottom {
-    border: 0.5rem solid lightslategray;
-    border-top: none;
-}
-.vertical {
-    margin-bottom: 10vh;
-}
-.top {
-    height: 8vh;
-    padding: 1vh;
-}
-.profile-top {
-    height: 14vh;
-    padding: 1vh;
-}
-.gray {
-    background-color: rgb(56, 64, 71);
-    color: white;
-}
-.no-bullet {
-    list-style: none;
-}
-.inline {
-    display: inline;
-}
-.more {
-    border-top: 0.5rem solid lightslategray;
-    height: 2vh;
-}
-#headshot {
-    margin-top: -6vh;
-    margin-left: 3vw;
-    width: 10rem;
-}
-.padded-left-bottom > * {
-    margin-left: 3vw;
-    margin-bottom: 1vw;
-}
 .round-photo {
     border-radius: 50%;
     height: 8vh;
     vertical-align: middle;
 }
-.text-style span {
-    font-size: 5vh;
-    margin-left: 2vw;
+
+/* COLOR COMPONENTS */
+.blue {
+    background-color: #17a2b8;
+    color: white;
 }
-.users > li {
-    margin: 0vh 0 1vh 1vw;
-    padding-top: 1vh;
+.gray {
+    background-color: rgb(56, 64, 71);
+    color: white;
 }
-#education-content {
-    padding-top: 2vh;
+/* CONTENT DIV TOP AND BOTTOM */
+.bottom {
+    border: 0.5rem solid lightslategray;
+    border-top: none;
 }
-.users > * {
-    vertical-align: middle;
+.top {
+    height: 8vh;
+    padding: 1vh;
 }
+.div-parent {
+    display: block;
+    margin-bottom: 5vh;
+}
+.div-parent div {
+    padding: 2vh 2vw;
+}
+
+/* BUTTON */
 .button {
     font-size: 2.5vh;
     padding: 0.5vh 0.5vw;
+}
+
+/* PROFILE AND HEADSHOT */
+.profile-top {
+    height: 15vh;
+    position: static;
+    
+}
+.profile-bottom {
+    margin-top: 5vh;
+    margin-bottom: 3vh;
+    height: 25vh;
+    font-size: 3vh;
+}
+.profile-bottom * {
+    padding-bottom: 1vh;
+}
+#headshot {
+    width: 20vh;
+    position: static;
+    top: 10vh;
+}
+
+/* USERS LISTS*/
+.users {
+    font-size: 4vh;
+}
+.users li {
+    margin-bottom: 2vh;
+    display: block;
+}
+.actions {
+    float: right;
 }
