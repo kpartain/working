@@ -141,6 +141,7 @@ header {
     width: 20vh;
     position: static;
     top: 10vh;
+    margin-left: 2vw;
 }
 
 /* USERS LISTS*/
