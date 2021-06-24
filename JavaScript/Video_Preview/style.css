@@ -110,15 +110,15 @@ body {
 
 .video-small {
     display: flex;
-    align-items: center;
+    align-items:center;
     margin: 20px 0;
+    height: 100px;
+    overflow:hidden;
 }
-
-.vid-s {
+.video-element {
     width: 170px;
-    margin-right: 10px;
+    margin-right: 20px;
 }
-
 .video-title {
     font-size: 1.2rem;
     font-weight: 900;
