@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title></title>
+        <title>DojoWeather</title>
         <meta name="description" content="" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <!-- GOOGLE FONT -->
@@ -38,9 +38,10 @@
                 <header>
                     <h2>San Jose</h2>
                     <h4>show temperature in <form>
-                            <select>
-                                <option value="0"> ºF </option>
-                                <option value="1"> ºC </option>
+                        <!-- onClick converts the temperature in each column -->
+                            <select id="list" class="far">
+                                <option value="0" id="F"> ºF </option>
+                                <option value="1" id="C"> ºC </option>
                             </select>
                         </form>
                     </h4>
@@ -56,8 +57,8 @@
                         <img src="../../Resources/ICONS/some_rain.png" alt="" class="circle-photo">
                         <h3>some rain</h3>
                             <ul class="temperatures no-bullet-inline">
-                                <li class="high">75º</li>
-                                <li class="low">65º</li>
+                                <li class="high temperature">75º</li>
+                                <li class="low temperature">65º</li>
                             </ul>
                     </div>
                     <!-- -COLUMN2 -->
@@ -67,8 +68,8 @@
                         <img src="../../Resources/ICONS/some_sun.png" alt="" class="circle-photo">
                         <h3>some sun</h3>
                         <ul class="temperatures no-bullet-inline">
-                            <li class="high">80º</li>
-                            <li class="low">66º</li>
+                            <li class="high temperature">80º</li>
+                            <li class="low temperature">66º</li>
                         </ul>
                     </div>
                     <!-- -COLUMN3 -->
@@ -78,8 +79,8 @@
                         <img src="../../Resources/ICONS/some_clouds.png" alt="" class="circle-photo">
                         <h3>some clouds</h3>
                         <ul class="temperatures no-bullet-inline">
-                            <li class="high">69º</li>
-                            <li class="low">61º</li>
+                            <li class="high temperature">69º</li>
+                            <li class="low temperature">61º</li>
                         </ul>
 
                     </div>
@@ -90,8 +91,8 @@
                         <img src="../../Resources/ICONS/some_sun.png" alt="" class="circle-photo">
                         <h3>some sun</h3>
                         <ul class="temperatures no-bullet-inline">
-                            <li class="high">78º</li>
-                            <li class="low">70º</li>
+                            <li class="high temperature">78º</li>
+                            <li class="low temperature">70º</li>
                         </ul>
                     </div>
                 </main>
