@@ -32,7 +32,7 @@ console.log(fruit2 + " and " + fruit1);
 //returns ["e", "d", "c", "b", "a"];
 var myArray = ["a", "b", "c", "d", "e"];
 function reverseArray(arr) {
-    var j = arr.length;
+    var j = arr.length - 1;
     for (var i = 0; i < j; i++) {
         [arr[i], arr[j]] = [arr[j], arr[i]];
         j--;
