@@ -19,13 +19,13 @@
     <body>
         <!-- NAVBAR 100% -->
         <!-- LOGO | [space] | Burbank | Chicago | Dallas -->
-        <div id="main">
+    <div id="main">
         <nav class="pad-lr-10vw">
-            <h1>LOGO</h1>
+            <h1>DojoWeather</h1>
             <ul class="no-bullet-inline">
-                <li>Burbank</li>
-                <li>Chicago</li>
-                <li>Dallas</li>
+                <li><h3>Burbank</h3></li>
+                <li><h3>Chicago</h3></li>
+                <li><h3>Dallas</h3></li>
             </ul>
         </nav>
 
@@ -36,13 +36,13 @@
                 <!-- -HEADER CITY NAME AND SHOW TEMPERATURE IN [dropdown F or C] 100% OF CONTENT -->
                 <header>
                     <h2>San Jose</h2>
-                    <h3>show temperature in <form>
+                    <h4>show temperature in <form>
                             <select>
-                                <option value="0">F</option>
-                                <option value="1">C</option>
+                                <option value="0"> ºF </option>
+                                <option value="1"> ºC </option>
                             </select>
                         </form>
-                    </h3>
+                    </h4>
                 </header>
                 <!-- HR LINE BREAK -->
                 <hr />
@@ -51,32 +51,59 @@
                     <!-- -COLUMN1 -->
                     <div class="col col-1">
                         <!-- -today/rain.png/some rain/ red(75) blue(65) -->
-                        Today
+                        <h2>Today</h2>
+                        <img src="../../Resources/ICONS/some_rain.png" alt="" class="circle-photo">
+                        <h3>some rain</h3>
+                            <ul class="temperatures no-bullet-inline">
+                                <li class="high">75º</li>
+                                <li class="low">65º</li>
+                            </ul>
                     </div>
                     <!-- -COLUMN2 -->
                     <div class="col col-2">
                         <!-- -tomorrow/sun.png/some sun/ red(80) blue(66) -->
-                        Tomorrow
+                        <h2>Tomorrow</h2>
+                        <img src="../../Resources/ICONS/some_sun.png" alt="" class="circle-photo">
+                        <h3>some sun</h3>
+                        <ul class="temperatures no-bullet-inline">
+                            <li class="high">80º</li>
+                            <li class="low">66º</li>
+                        </ul>
                     </div>
                     <!-- -COLUMN3 -->
                     <div class="col col-3">
-                        Friday
-                        <!-- -friday/cloud.png/some sun/ red(69) blue(661) -->
+                        <!-- -friday/cloud.png/some clouds/ red(69) blue(61) -->
+                        <h2>Friday</h2>
+                        <img src="../../Resources/ICONS/some_clouds.png" alt="" class="circle-photo">
+                        <h3>some clouds</h3>
+                        <ul class="temperatures no-bullet-inline">
+                            <li class="high">69º</li>
+                            <li class="low">61º</li>
+                        </ul>
+
                     </div>
                     <!-- -COLUMN4 -->
                     <div class="col col-4">
                         <!-- -sunday/sun.png/some sun/ red(78) blue(70) -->
-                        Sunday
+                        <h2>Sunday</h2>
+                        <img src="../../Resources/ICONS/some_sun.png" alt="" class="circle-photo">
+                        <h3>some sun</h3>
+                        <ul class="temperatures no-bullet-inline">
+                            <li class="high">78º</li>
+                            <li class="low">70º</li>
+                        </ul>
                     </div>
-                    <!-- POPUPS -->
-                    <!-- -COOKIE uses position:fixed to position message at the bottom of the page -->
-                    <!-- when you hit okay, visibility changes to none -->
-                    <div class="popup"></div>
-                </div>
+                </main>
             </div>
         </div>
-        <!-- <div id="test-space"></div> -->
-        <footer>this is a footer<footer>
-        <script src="" async defer></script>
+    </div>
+        <!-- POPUPS -->
+        <div id="cookie-popup">
+            <img class="f1 margin-2vw-lr-1vh-tb circle-photo" src="../../Resources/ICONS/cookie.png" alt="an icon of a cookie with a bite removed" />
+            <span class="f6 margin-2vw-lr-1vh-tb"><h2>Stop! Cookie time</h2><h3>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyze our traffic.<a href="#">Read more..</a></h3> </span>
+            <button class="f1 margin-2vw-lr-1vh-tb button" type="button">I Accept</button>
+        </div>
+    <footer>this is a footer<footer>
+    <script src="" async defer></script>
     </body>
 </html>
