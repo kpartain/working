@@ -1,0 +1,32 @@
+/* CSS reset & favorite font */
+/* insert into HTML <head></head>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"rel="stylesheet"/> 
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* perfect circle for img div etc */
+.perfect-circle {
+    border-radius: 50%;
+}
+
+/* custom square button with harsh drop shadow */
+.button {
+    border-radius: 0%;
+    background-color: #9CC1F4;
+    box-shadow: 6px 6px black;
+    border: 2px solid black;
+    font-size: 2em;
+}
+
+/* no bullet inline li elements *ATTACH TO THE UL* */
+.no-bullet-inline li {
+    display: inline-block;
+    list-style: none;
+}

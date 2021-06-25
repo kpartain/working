@@ -85,9 +85,8 @@ h3 {
 .col > * {
     margin: 2vh 0 2vh 0;
 }
-.circle-photo {
+.perfect-circle {
     border-radius: 50%;
-    width: 70%;
 }
 .temperatures {
     display: flex;
