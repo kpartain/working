@@ -25,8 +25,19 @@ header {
 header form {
     display: inline;
 }
-.main {
+footer {
+    width: 100%;
+    background-color: darkgoldenrod;
+    bottom: 0;
+}
+#test-space {
+    height: 20rem;
+    width: 100%;
+    background-color: darkgreen;
+}
+#main {
     background-color: aquamarine;
+    height: 100vh;
 }
 .no-bullet-inline li {
     display: inline-block;
