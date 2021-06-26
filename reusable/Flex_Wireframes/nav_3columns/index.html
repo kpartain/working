@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>ASSIGNMENT TITLE2</title>
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- GOOGLE FONT -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+            rel="stylesheet"
+        />
+        <!-- LINKED STYLESHEET -->
+        <link rel="stylesheet" href="" />
+        <style>
+            * {
+                border: 2px solid white;
+                /* delete above THIS FIXES HORIZONTAL SCROLL*/
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+                font-family: "Montserrat", sans-serif;
+            }
+            nav {
+                background-color: black;
+                /* delete above */
+                color: white;
+                width: 100%;
+                height: 10vh;
+            }
+            footer {
+                background-color: blueviolet;
+                /* delete above */
+                width: 100%;
+                position: absolute;
+                align-self: baseline;
+                text-align: center;
+            }
+            header {
+                background-color: darkgoldenrod;
+                text-align: center;
+            }
+            article {
+                background-color: hotpink;
+            }
+            aside {
+                background-color: grey;
+            }
+            main {
+                background-color: teal;
+                min-height: 90vh;
+                color: black;
+            }
+            figure img{
+                width: 10vw;
+                height: auto;
+                /* above scales the photo with the page */
+            }
+            .flex-center-space-between {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            .no-bullet-inline li {
+                background-color: aquamarine;
+                /* delete above */
+                display: inline-block;
+                list-style: none;
+            }
+            .padding-10vw-lr {
+                padding: 0vh 10vw;
+            }
+            .margin-5vh-tb {
+                margin: 5vh 0;
+            }
+            .margin-5vw-lr {
+                margin: 0 5vw;
+            }
+            .row {
+                display: flex;
+                flex-direction: row;
+                gap: 5vw;
+                /* justify-content: center;
+                text-align: center; */
+            }
+            .col {
+                background-color: #00d100;
+                flex: 1;
+            }
+            .col1 {
+                background-color: #00d100;
+                padding: 2vh 0 2vh 0;
+                flex: 1;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="padding-10vw-lr flex-center-space-between">
+            <h1>TITLE</h1>
+            <ul class="no-bullet-inline">
+                <li class="margin-5vw-lr"><h3>Nav-1</h3></li>
+                <li class="margin-5vw-lr"><h3>Nav-2</h3></li>
+                <li class="margin-5vw-lr"><h3>Nav-3</h3></li>
+            </ul>
+        </nav>
+        <header>Here is a header</header>
+        <main class="padding-10vw-lr margin-5vh-tb">
+            <div class="row">
+                <section class="col1">
+                    <!-- <article> holds the contents that make sense on their own like the articles, blogs, comments -->
+                    <article>COLUMN 1 CONTENT</article>
+                </section>
+                <div class="col1">
+                    <article>COLUMN 2 CONTENT</article>
+                    <article class="margin-5vh-tb">
+                        <figure><img src="../../../Resources/ICONS/user-circle.png" alt="alternate text">
+                        <figcaption>Here is the caption</figcaption></figure>
+                    </article>
+                    <article class="margin-5vh-tb margin-5vh-tb margin-5vw-lr">
+                        <p>THIS IS</p>
+                        <p>ALL</p>
+                        <p>WITHIN ONE</p>
+                        <p>DIV</p>
+                        <p>ABOVE THIS</p>
+                    </article>
+                </div>
+                <!-- <aside> is used to mark the additional information, which can improve another element but is not needed to understand the main content. -->
+                <aside class="col2 flex-center-space-between">
+                    <h2>LESS IMPORTANT INFO</h2>
+                </aside>
+            </div>
+        </main>
+        <footer>this is a footer</footer>
+        <!-- SCRIPT TAG -->
+        <script src="script.js" async defer></script>
+    </body>
+</html>
