@@ -3,6 +3,19 @@
 // If "food" was not present in the array console log "I'm hungry" once.
 function alwaysHungry(arr) {
     // your code here 
+    var numberOfYummies = 0;
+    for(var i=0; i<arr.length; i++) {
+        if(arr[i] == "food"){
+            numberOfYummies++;
+        }
+    }
+    if(numberOfYummies == 0) {
+        console.log("I'm hungry");
+    } else {
+        for(var j=0; j<numberOfYummies; j++) {
+            console.log("yummy");
+        }
+    }
 }
    
 alwaysHungry([3.14, "food", "pie", true, "food"]);
@@ -15,7 +28,11 @@ alwaysHungry([4, 1, 5, 7, 2]);
 // Given an array and a value cutoff, return a new array containing only the values larger than cutoff.
 function highPass(arr, cutoff) {
     var filteredArr = [];
-    // your code here
+    for(var i = 0; i < arr.length; i++) {
+        if(arr[i] > cutoff) {
+            filteredArr.push(arr[i])
+        }
+    }
     return filteredArr;
 }
 var result = highPass([6, 8, 3, 10, -2, 5, 9], 5);
@@ -29,6 +46,15 @@ function betterThanAverage(arr) {
     // calculate the average
     var count = 0
     // count how many values are greated than the average
+    for(var i = 0; i < arr.length; i++) {
+        sum += arr[i]
+    }
+    var average = sum / arr.length;
+    for(var j = 0; j < arr.length; j++) {
+        if(arr[j] > average) {
+            count++
+        }
+    }
     return count;
 }
 var result = betterThanAverage([6, 8, 3, 10, -2, 5, 9]);
@@ -38,7 +64,11 @@ console.log(result); // we expect back 4copy
 // Array Reverse
 // Write a function that will reverse the values an array and return them.
 function reverse(arr) {
-    // your code here
+    var rightPointer = arr.length - 1;
+    for(var leftPointer = 0; leftPointer <= rightPointer; leftPointer++) {
+        [arr[leftPointer],arr[rightPointer]]=[arr[rightPointer],arr[leftPointer]];
+        rightPointer--;
+    }
     return arr;
 }
    
@@ -53,6 +83,9 @@ console.log(result); // we expect back ["e", "d", "c", "b", "a"]copy
 function fibonacciArray(n) {
     // the [0, 1] are the starting values of the array to calculate the rest from
     var fibArr = [0, 1];
+    for(var i=1; i < n - 1; i++) {
+        fibArr.push((fibArr[i]+fibArr[i-1]));
+    }
     // your code here
     return fibArr;
 }
