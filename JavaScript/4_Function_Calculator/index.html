@@ -11,37 +11,36 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"rel="stylesheet"/> 
         <link rel="stylesheet" href="style.css">
-
     </head>
     <body>
         <div id="calculator">
             <div id="display">0</div>
             <div class="row">
-              <button onclick="press(this)">7</button>
-              <button onclick="press(this)">8</button>
-              <button onclick="press(this)">9</button>
+              <button class="number" onclick="press(this)">7</button>
+              <button class="number" onclick="press(this)">8</button>
+              <button class="number" onclick="press(this)">9</button>
               <button class="operator" onclick="press(this)">÷</button>
             </div>
             <div class="row">
-              <button onclick="press(this)">4</button>
-              <button onclick="press(this)">5</button>
-              <button onclick="press(this)">6</button>
+              <button class="number" onclick="press(this)">4</button>
+              <button class="number" onclick="press(this)">5</button>
+              <button class="number" onclick="press(this)">6</button>
               <button class="operator" onclick="press(this)">×</button>
             </div>
             <div class="row">
-              <button onclick="press(this)">1</button>
-              <button onclick="press(this)">2</button>
-              <button onclick="press(this)">3</button>
+              <button class="number" onclick="press(this)">1</button>
+              <button class="number" onclick="press(this)">2</button>
+              <button class="number" onclick="press(this)">3</button>
               <button class="operator" onclick="press(this)">−</button>
             </div>
             <div class="row">
               <button onclick="clr()">C</button>
-              <button onclick="press(this)">0</button>
+              <button class="number" onclick="press(this)">0</button>
               <button class="decimal" onclick="press(this)">.</button>
               <button class="operator" onclick="press(this)">+</button>
             </div>
             <div class="row">
-              <button id="equals" onclick="calculate()">=</button>
+              <button id="equals" onclick="calculate(this)">=</button>
             </div>
           <div>
         <script src="script.js" async defer></script>

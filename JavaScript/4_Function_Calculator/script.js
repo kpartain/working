@@ -1,29 +1,31 @@
 //innerHTML of our display
 var displayContent = document.getElementById("display").innerHTML;
 
-var myEquation = [];
-var someNumber = "";
+let myEquation = [];
+let someNumber = "";
 
 //1st onclick, change innerHTML of display to number
 function press(element){
-    var e = element.innerHTML;
     if(element.className == "decimal") {
-        someNumber = someNumber + e;
+        someNumber += element.innerHTML;
         document.getElementById("display").innerHTML = someNumber;
-    }else if (e == 0 || e == 1 || e == 2 || e == 3 || e == 4 || e == 5 || e == 6 || e == 7 || e == 8 || e == 9){
-        someNumber += e;
+    }else if (element.className == "number"){
+        someNumber += element.innerHTML;
         document.getElementById("display").innerHTML = someNumber;
-    } else {
+    } else if(element.className == "operator"){
             myEquation.push(someNumber);
+            myEquation.push(element.innerHTML);
             someNumber = "";
-            myEquation.push(e);
     }
 }
 
-function calculate() {
+function calculate(element) {
     myEquation += someNumber;
-    someNumber = "";
-    return console.log(myEquation)
+    console.log(myEquation);
+    var resultString = myEquation.join(', ');
+    return console.log(resultString)
+    // someNumber = "";
+    // console.log(eval(resultString));
 }
 
 function clr(){
