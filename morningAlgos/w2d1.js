@@ -1,35 +1,27 @@
 //The Math Library
 //Predict what each of the following will return. Can we predict the variable random?
 var floor = Math.floor(1.8);
-var ceiling = Math.ceil( Math.PI );
+var ceiling = Math.ceil(Math.PI);
 var random = Math.random();
-    
+
 console.log(floor);
 console.log(ceiling);
 console.log(random);
 
-
 //Dice Roller
-//Using what we've learned about the Math library in JavaScript, complete the 
+//Using what we've learned about the Math library in JavaScript, complete the
 //following function that should return a value between 1 through 6 at random.
 function d6() {
     var roll = Math.ceil(Math.random() * 6);
     // your code here
     return roll;
 }
-    
+
 var playerRoll = d6();
 console.log("The player rolled: " + playerRoll);
-console.log("The player rolled: " + d6());
-console.log("The player rolled: " + d6());
-console.log("The player rolled: " + d6());
-console.log("The player rolled: " + d6());
-console.log("The player rolled: " + d6());
-console.log("The player rolled: " + d6());
-console.log("The player rolled: " + d6());
 
 //Consult the Oracle
-//Using the following array, 
+//Using the following array,
 //write a function that will answer all of our questions by randomly choosing a response
 var lifesAnswers = [
     "It is certain.",
@@ -51,10 +43,10 @@ var lifesAnswers = [
     "My reply is no.",
     "My sources say no.",
     "Outlook not so good.",
-    "Very doubtful."
+    "Very doubtful.",
 ];
 
-function consultTheOracle(){
+function consultTheOracle() {
     var answerIndex = Math.floor(Math.random() * lifesAnswers.length);
     return lifesAnswers[answerIndex];
 }
