@@ -13,9 +13,7 @@ console.log(random);
 //Using what we've learned about the Math library in JavaScript, complete the 
 //following function that should return a value between 1 through 6 at random.
 function d6() {
-    var max = 6;
-    var min = 1;
-    var roll = Math.floor(Math.random() * (max - min + 1) + min);
+    var roll = Math.ceil(Math.random() * 6);
     // your code here
     return roll;
 }
@@ -57,12 +55,7 @@ var lifesAnswers = [
 ];
 
 function consultTheOracle(){
-    var min = 0;
-    var max = lifesAnswers.length;
-    var answerIndex = Math.floor(Math.random() * (max - min));
-    console.log(answerIndex);
-    //look for 0 and 19
+    var answerIndex = Math.floor(Math.random() * lifesAnswers.length);
     return lifesAnswers[answerIndex];
-    
 }
 console.log(consultTheOracle());
