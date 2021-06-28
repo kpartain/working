@@ -53,7 +53,7 @@ function consultTheOracle() {
 console.log(consultTheOracle());
 
 //Helper Function
-function randomNumber(min, max, incOrExc) {
+function randomInteger(min, max, incOrExc) {
     var returnInteger = 0;
     if (incOrExc == "inclusive") {
         min = Math.ceil(min);
