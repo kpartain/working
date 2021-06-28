@@ -52,6 +52,7 @@ function consultTheOracle() {
 }
 console.log(consultTheOracle());
 
+//Helper Function
 function randomNumber(min, max, incOrExc) {
     var returnInteger = 0;
     if (incOrExc == "inclusive") {
@@ -63,5 +64,5 @@ function randomNumber(min, max, incOrExc) {
         max = Math.floor(max);
         returnInteger = Math.floor(Math.random() * (max - min) + min);
     }
-    return returnInteger
+    return returnInteger;
 }
