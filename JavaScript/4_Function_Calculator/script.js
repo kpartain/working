@@ -14,13 +14,15 @@ function press(element){
         someNumber += e;
         document.getElementById("display").innerHTML = someNumber;
     } else {
-            myEquation.push(parseInt(someNumber));
+            myEquation.push(someNumber);
             someNumber = "";
             myEquation.push(e);
     }
 }
 
 function calculate() {
+    myEquation += someNumber;
+    someNumber = "";
     return console.log(myEquation)
 }
 
