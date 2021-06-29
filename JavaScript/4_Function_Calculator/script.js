@@ -20,10 +20,9 @@ function press(element){
 }
 
 function calculate(element) {
-    myEquation += someNumber;
-    console.log(myEquation);
-    var resultString = myEquation.join(', ');
-    return console.log(resultString)
+    myEquation.push(someNumber);
+    var resultString = myEquation.join("");
+    return console.log(eval(resultString));
     // someNumber = "";
     // console.log(eval(resultString));
 }
