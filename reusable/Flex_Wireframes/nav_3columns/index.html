@@ -15,87 +15,6 @@
         />
         <!-- LINKED STYLESHEET -->
         <link rel="stylesheet" href="style.css" />
-        <style>
-            * {
-                border: 2px solid white;
-                /* delete above THIS FIXES HORIZONTAL SCROLL*/
-                padding: 0;
-                margin: 0;
-                box-sizing: border-box;
-                font-family: "Montserrat", sans-serif;
-            }
-            nav {
-                background-color: black;
-                /* delete above */
-                color: white;
-                width: 100%;
-                height: 10vh;
-            }
-            footer {
-                background-color: blueviolet;
-                /* delete above */
-                width: 100%;
-                position: absolute;
-                align-self: baseline;
-                text-align: center;
-            }
-            header {
-                background-color: darkgoldenrod;
-                text-align: center;
-            }
-            article {
-                background-color: hotpink;
-            }
-            aside {
-                background-color: grey;
-            }
-            main {
-                background-color: teal;
-                min-height: 90vh;
-                color: black;
-            }
-            figure img{
-                width: 10vw;
-                height: auto;
-                /* above scales the photo with the page */
-            }
-            .flex-center-space-between {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-            }
-            .no-bullet-inline li {
-                background-color: aquamarine;
-                /* delete above */
-                display: inline-block;
-                list-style: none;
-            }
-            .padding-10vw-lr {
-                padding: 0vh 10vw;
-            }
-            .margin-5vh-tb {
-                margin: 5vh 0;
-            }
-            .margin-5vw-lr {
-                margin: 0 5vw;
-            }
-            .row {
-                display: flex;
-                flex-direction: row;
-                gap: 5vw;
-                /* justify-content: center;
-                text-align: center; */
-            }
-            .col {
-                background-color: #00d100;
-                flex: 1;
-            }
-            .col1 {
-                background-color: #00d100;
-                padding: 2vh 0 2vh 0;
-                flex: 1;
-            }
-        </style>
     </head>
     <body>
         <nav class="padding-10vw-lr flex-center-space-between">
@@ -106,28 +25,34 @@
                 <li class="margin-5vw-lr"><h3>Nav-3</h3></li>
             </ul>
         </nav>
-        <header>Here is a header</header>
-        <main class="padding-10vw-lr margin-5vh-tb">
+        <main class="padding-10vw-lr margin-2vh-tb">
+            <header>Here is a header</header>
             <div class="row">
-                <section class="col1">
+                <section class="col2">
                     <h2>A heading</h2>
                     <!-- <article> holds the contents that make sense on their own like the articles, blogs, comments -->
                     <article><h2>COLUMN 1 CONTENT</h2></article>
                 </section>
-                <div class="col1">
+                <div class="col2">
                     <article><h2>COLUMN 2 CONTENT</h2></article>
                     <article class="margin-5vh-tb">
                         <h2>an image</h2>
-                        <figure><img src="../../../Resources/ICONS/user-circle.png" alt="alternate text">
-                        <figcaption>Here is the caption</figcaption></figure>
+                        <figure>
+                            <img
+                                src="../../../Resources/ICONS/user-circle.png"
+                                alt="alternate text"
+                            />
+                            <figcaption>Here is the caption</figcaption>
+                        </figure>
                     </article>
                     <article class="margin-5vh-tb margin-5vh-tb margin-5vw-lr">
                         <h2>More content</h2>
                     </article>
                 </div>
                 <!-- <aside> is used to mark the additional information, which can improve another element but is not needed to understand the main content. -->
-                <aside class="col2 flex-center-space-between">
-                    <h2>LESS IMPORTANT INFO</h2>
+                <aside class="col1 flex-center-space-between">
+                    <h3>LESS IMPORTANT INFO</h3>
+                    <p>Here is some more text</p>
                 </aside>
             </div>
         </main>
