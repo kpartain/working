@@ -1,0 +1,14 @@
+nav {
+    width: 100%;
+}
+#navUL {
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    gap: 2vmax;
+}
+
+#navUL li {
+    list-style: none;
+    display: inline-block;
+}

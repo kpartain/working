@@ -6,40 +6,76 @@
         <title>home</title>
         <meta name="description" content="" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" href="" />
+        <!-- Google Font  -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+            rel="stylesheet"
+        />
+        <!-- FontAwesome -->
+        <!-- 
+            Solid Icons
+            https://fontawesome.com/v5.15/icons?d=gallery&p=2&s=solid 
+            <i class="fas fa-camera"></i>
+            Brand Icons 
+            https://fontawesome.com/v5.15/icons?s=brands	
+            <i class="fab fa-font-awesome"></i> 
+        -->
+        <script src="https://kit.fontawesome.com/11f04466b8.js" crossorigin="anonymous"></script>
+        <!-- Script  -->
+        <script src="script.js" async defer></script>
+        <!-- Stylesheet  -->
+        <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-        <div class="container">
+        <div id="container">
             <!-- bookmarks font awesome? -->
             <nav>
-                <ul class="navbar">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                <ul id="navUL">
+                    <li><i class="fa-4x fab fa-facebook-square"></i></li>
+                    <li><i class="fa-4x fab fa-instagram"></i></li>
+                    <li><i class="fa-4x fa fa-envelope-square"></i></li>
+                    <li><i class="fa-4x fab fa-amazon"></i></li>
+                    <li><i class="fa-4x fab fa-youtube"></i></li>
+                    <li><i class="fa-4x fab fa-linkedin"></i></li>
+                    <li><i class="fa-4x fab fa-github"></i></li>
+                    <li><i class="fa-4x fab fa-aws"></i></li>
+                    <li><i class="fa-4x fab fa-wordpress-simple"></i></li>
                 </ul>
             </nav>
             <!-- meditation app
         https://www.youtube.com/watch?v=oMBXdZzYqEk&t=1s -->
-            <div class="meditation">
+            <div id="meditation">
                 <h2>meditation</h2>
             </div>
             <!-- weather app 
         https://www.youtube.com/watch?v=wPElVpR1rwA -->
-            <div class="weather">
+            <div id="weather">
                 <h2>weather</h2>
             </div>
             <!-- todo list -->
-            <div class="toDoList">
+            <div id="toDoList">
                 <h2>to-do list</h2>
             </div>
             <!-- calendar -->
-            <div class="calendar">
+            <div id="calendar">
                 <h2>calendar</h2>
+                <iframe
+                    id="calendar"
+                    src="https://calendar.google.com/calendar/embed?wkst=1&amp;ctz=America%2FLos_Angeles&amp;src=NnUwdm9haThpbHRrM2wxdWw0MHNtNHV1YzhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;showTitle=0&amp;showPrint=0&amp;mode=WEEK&amp;showTz=0&amp;showCalendars=0&amp;showTabs=0&amp;showNav=1"
+                    style="border: solid 1px #777"
+                    width="800"
+                    height="200"
+                    frameborder="0"
+                    scrolling="no"
+                ></iframe>
+            </div>
+            <!-- candy crush 
+            https://www.youtube.com/watch?v=XD5sZWxwJUk -->
+            <div id="candyCrush">
+                <h2>candy crush custom</h2>
             </div>
         </div>
-        <script src="" async defer></script>
     </body>
 </html>
