@@ -49,7 +49,7 @@ for(var i = 0; i < pokemon.length; i++) {
 }
 
 console.log("**********************************************");
-// console.log the first type of all the pokémon whose second type is "flying"
+// console.log the FIRST TYPE of all the pokémon whose SECOND type is "flying"
 for(var i = 0; i < pokemon.length; i++) {
     if(pokemon[i].types.length > 1 && pokemon[i].types[1] == "flying") {
         console.log(pokemon[i].types[0]);
@@ -57,7 +57,7 @@ for(var i = 0; i < pokemon.length; i++) {
 }
 
 console.log("**********************************************");
-// Bonus Challenge: console.log the reverse of the names of the pokémon whose only type is "poison"
+// Bonus Challenge: console.log the REVERSE of the NAMES of the pokémon whose ONLY type is "poison"
 for(var i = 0; i < pokemon.length; i++) {
     if(pokemon[i].types.length == 1 && pokemon[i].types[0] == "poison") {
         console.log(pokemon[i].name.split("").reverse().join(""));
