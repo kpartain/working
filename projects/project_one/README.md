@@ -6,3 +6,4 @@
 * weather app (reference: https://www.youtube.com/watch?v=wPElVpR1rwA)
 * todo list (save as local JSON)
 * calendar (integrate to google)
+* custom candy crush (reference: https://www.youtube.com/watch?v=XD5sZWxwJUk)
