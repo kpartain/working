@@ -58,7 +58,7 @@ for (var i = 0; i < pokemon.length; i++) {
 console.log("**********************************************");
 // console.log the FIRST TYPE of all the pokémon whose SECOND type is "flying"
 for (var i = 0; i < pokemon.length; i++) {
-    if (pokemon[i].types.length > 1 && pokemon[i].types[1] == "flying") {
+    if (pokemon[i].types[1] == "flying") {
         console.log(pokemon[i].types[0]);
     }
 }
