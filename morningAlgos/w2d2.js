@@ -66,7 +66,7 @@ for (var i = 0; i < pokemon.length; i++) {
 console.log("**********************************************");
 // Bonus Challenge: console.log the REVERSE of the NAMES of the pokémon whose ONLY type is "poison"
 for (var i = 0; i < pokemon.length; i++) {
-    if (pokemon[i].types.length == 1 && pokemon[i].types[0] == "poison") {
+    if (pokemon[i].types == "poison") {
         console.log(pokemon[i].name.split("").reverse().join(""));
     }
 }
