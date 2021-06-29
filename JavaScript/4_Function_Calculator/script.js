@@ -24,19 +24,24 @@ function calculate() {
     myEquation.push(someNumber);
     //reset the string someNumber to blank
     someNumber = '';
-    console.log("myEquation in calculate(): " + myEquation);
     //turn the equation array into a string
-    var resultString = myEquation.join(" ");
-    console.log("resultString in calculate(): " + resultString);
+    var resultString = myEquation.join("");
     //we want to set the equation to empty
     myEquation = [];
-    //but then push the finalResult
-    var theAnswer = eval(resultString);
-    myEquation.push(theAnswer)
-    return console.log("Return of calculate(): " + theAnswer);
+    //but then push the finalResult if not 0 so we can continue operating
+    var theAnswer = parse(resultString);
+    if(theAnswer != 0) {
+       myEquation.push(theAnswer) 
+    }
+    
+    return document.getElementById("display").innerHTML = theAnswer;
 
 }
 
+function parse(str) {
+    return Function(`'use strict'; return (${str})`)()
+  }
+  
 
 
 function clr(){
