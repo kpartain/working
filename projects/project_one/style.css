@@ -86,30 +86,20 @@ https://www.youtube.com/watch?v=oMBXdZzYqEk&t=1s */
     font-size: 20px;
     border-radius: 5px;
     cursor: pointer;
-    border: 2px solid white;
     transition: all 0.5s ease;
 }
 
 .sound-picker button {
     border: none;
-    height: 120px;
-    width: 120px;
-    padding: 30px;
     border-radius: 50%;
 }
-.sound-picker button:nth-child(1) {
-    background: #4972a1;
-}
-.sound-picker button:nth-child(2) {
-    background: #a14f49;
-}
 .sound-picker button img {
-    height: 100%;
+    height: 2vmax;
 }
 
-.time-select button:hover {
-    background: white;
-    color: black;
+.time-select button:hover, .sound-picker button:hover {
+    background: rgba(255, 255, 255, 0.253);
+    color: var(--darkGray);
 }
 
 .player-container {

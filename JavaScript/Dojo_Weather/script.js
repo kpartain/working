@@ -23,7 +23,11 @@ function changeTemperatures() {
         document.getElementById("list").className == "cel"
     ) {
         for (var i = 0; i < temperaturesLI.length; i++) {
-            temperaturesLI[i].innerText = Math.round(parseInt(temperaturesLI[i].innerText.split("º"))* (9/5) + 32) + "º";
+            temperaturesLI[i].innerText =
+                Math.round(
+                    parseInt(temperaturesLI[i].innerText.split("º")) * (9 / 5) +
+                        32
+                ) + "º";
         }
         return (document.getElementById("list").className = "far");
     } else if (
@@ -31,7 +35,12 @@ function changeTemperatures() {
         document.getElementById("list").className == "far"
     ) {
         for (var i = 0; i < temperaturesLI.length; i++) {
-            temperaturesLI[i].innerText =  Math.round((parseInt(temperaturesLI[i].innerText.split("º"))-32) * 5 / 9) + "º";
+            temperaturesLI[i].innerText =
+                Math.round(
+                    ((parseInt(temperaturesLI[i].innerText.split("º")) - 32) *
+                        5) /
+                        9
+                ) + "º";
         }
         return (document.getElementById("list").className = "cel");
     }
