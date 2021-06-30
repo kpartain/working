@@ -1,9 +1,9 @@
 :root {
-    --darkGray:#2C2B30;
-    --mediumGray:#4F4F51;
-    --lightGray:#D6D6D6;
-    --pink:#F2C4CE;
-    --salmon:#F58F7C;
+    --darkGray: #2c2b30;
+    --mediumGray: #4f4f51;
+    --lightGray: #d6d6d6;
+    --pink: #f2c4ce;
+    --salmon: #f58f7c;
     /* call with var(--name) */
 }
 * {
@@ -24,7 +24,7 @@ nav {
 #navUL {
     width: 100%;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     gap: 2vmax;
 }
 
@@ -33,3 +33,145 @@ nav {
     list-style: none;
     display: inline-block;
 }
+/* main */
+#main-meditation-and-weather {
+    display: flex;
+}
+#main-meditation {
+    flex: 1;
+}
+#main-weather {
+    flex: 1;
+    background-color: var(--darkGray);
+}
+#main-toDoList {
+    width: 100%;
+    background-color: var(--darkGray);
+}
+
+#main-calendar {
+    width: 100%;
+    background-color: var(--darkGray);
+}
+
+#main-candyCrush {
+    flex: 1;
+    width: 100%;
+    background-color: var(--darkGray);
+}
+
+/* meditation app
+https://www.youtube.com/watch?v=oMBXdZzYqEk&t=1s */
+.meditation-app {
+    height: 50vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+.time-select,
+.sound-picker {
+    height: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items:stretch;
+    flex: 1;
+}
+.time-select button,
+.sound-picker button {
+    color: white;
+    height: 2vmax;
+    background: none;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid white;
+    transition: all 0.5s ease;
+}
+
+.sound-picker button {
+    border: none;
+    height: 120px;
+    width: 120px;
+    padding: 30px;
+    border-radius: 50%;
+}
+.sound-picker button:nth-child(1) {
+    background: #4972a1;
+}
+.sound-picker button:nth-child(2) {
+    background: #a14f49;
+}
+.sound-picker button img {
+    height: 100%;
+}
+
+.time-select button:hover {
+    background: white;
+    color: black;
+}
+
+.player-container {
+    position: relative;
+    height: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+}
+
+.player-container svg {
+    position: absolute;
+    height: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    pointer-events: none;
+}
+.player-container svg circle {
+    transition: all 0.2s ease-in-out;
+}
+.time-display {
+    color: white;
+    position: absolute;
+    font-size: 50px;
+    bottom: 10%;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    width: 1100px;
+    z-index: -10;
+}
+
+/* weather app 
+https://www.youtube.com/watch?v=wPElVpR1rwA */
+#weather {
+    background-color: var(--darkGray);
+    flex: 1;
+}
+/* todo list */
+#toDoList {
+    flex: 1;
+    width: 100%;
+    background-color: var(--darkGray);
+}
+/* calendar */
+#calendar {
+    flex: 1;
+    width: 100%;
+    background-color: var(--darkGray);
+}
+/* candy crush 
+https://www.youtube.com/watch?v=XD5sZWxwJUk */
+#candyCrush {
+    flex: 1;
+    width: 100%;
+    background-color: var(--darkGray);
+}
+/* other ideas
+where should I eat generator
+fortuneteller */
