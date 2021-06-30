@@ -1,5 +1,25 @@
+:root {
+    --darkGray:#2C2B30;
+    --mediumGray:#4F4F51;
+    --lightGray:#D6D6D6;
+    --pink:#F2C4CE;
+    --salmon:#F58F7C;
+    /* call with var(--name) */
+}
+* {
+    border: 1px solid red;
+    /* delete above THIS FIXES HORIZONTAL SCROLL*/
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+body {
+    background-color: var(--lightGray);
+}
 nav {
     width: 100%;
+    background-color: var(--darkGray);
 }
 #navUL {
     width: 100%;
@@ -9,6 +29,7 @@ nav {
 }
 
 #navUL li {
+    color: var(--pink);
     list-style: none;
     display: inline-block;
 }
