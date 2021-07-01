@@ -31,6 +31,11 @@ console.log(myTest);
 function flatten(arr2d) {
     var flat = [];
     // your code here
+    for(var i=0; i < arr2d.length; i++) {
+        for(var j=0; j<arr2d[i].length; j++) {
+            flat.push(arr2d[i][j]);
+        }
+    }
     return flat;
 }
     
