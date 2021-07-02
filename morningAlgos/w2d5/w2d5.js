@@ -25,6 +25,10 @@ function render(theDojo) {
 //        under the adjacent (all sides and corners) squares.
 //        Use i and j as the indexes to check theDojo.
 function howMany(i, j, element) {
+    // reloads the page
+    if(theDojo[i][j] =! 0) {
+        location.reload();
+    };
         console.log("Element " + element);
         console.log("i " + i);
         console.log("j " + j);
