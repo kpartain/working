@@ -13,6 +13,23 @@ var dojoDiv = document.querySelector("#the-dojo");
 // Creates the rows of buttons for this game
 function render(theDojo) {
   var result = "";
+//   2. at the start randomly place 10 ninjas into theDojo with at most 1 on each spot
+//function randomInteger(min, max, incOrExc)
+    // var numberPlaced = 0;
+    // for(var k=0; k < 10; k++) {
+    //     var whichArray = randomInteger(0, theDojo.length, "exclusive");
+    //     var numberOfZeros = [];
+    //     for(var z = 0; z < theDojo[whichArray].length; z++) {
+    //         if(theDojo[whichArray][z] == 0) {
+    //             numberOfZeros.push(z);
+    //         }
+    //     }
+    //     if(numberOfZeros.length > 0) {
+    //         var whichIndex = randomInteger(0, numberOfZeros.length, "exclusive");
+    //         numberPlaced++;
+    //         return theDojo[whichArray][numberOfZeros[whichIndex]] = 1;           
+    //     }
+    // }
   for(var i=0; i<theDojo.length; i++) {
     for(var j=0; j<theDojo[i].length; j++) {
       result += `<button class="tatami" onclick="howMany(${i}, ${j}, this)"></button>`;
@@ -25,7 +42,7 @@ function render(theDojo) {
 //        under the adjacent (all sides and corners) squares.
 //        Use i and j as the indexes to check theDojo.
 function howMany(i, j, element) {
-    // reloads the page
+    // 3. if you click on a ninja you must restart the game 
     if(theDojo[i][j] != 0) {
         return location.reload();
     };
@@ -103,3 +120,17 @@ console.table(theDojo);
 // adds the rows of buttons into <div id="the-dojo"></div> 
 dojoDiv.innerHTML = render(theDojo);    
 
+//return a random integer between two values
+function randomInteger(min, max, incOrExc) {
+    var returnInteger = 0;
+    if (incOrExc == "inclusive") {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        returnInteger = Math.floor(Math.random() * (max - min + 1) + min);
+    } else if (incOrExc == "exclusive") {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        returnInteger = Math.floor(Math.random() * (max - min) + min);
+    }
+    return returnInteger;
+}
